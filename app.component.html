@@ -1,0 +1,28 @@
+<h1>Enquiry form</h1>
+<form [formGroup]="EnquiryForm" (ngSubmit)="getData()">
+   <fieldset> 
+       <legend>Enquiry Form</legend>
+    <label>
+        Name:
+        <input type="text" formControlName="name" #name>
+    </label>
+    <br>
+    <label>
+        Age:
+        <input type="number" formControlName="age" min="18" max="30">
+    </label><br>
+    <label>
+        Address:
+        <textarea type="text" formControlName="address"></textarea>
+    </label><br>
+    <label>
+        State:
+         <input type="text" formControlName="state">
+    </label><br>
+    <label>
+        Pincode:
+        <input type="number" formControlName="pincode">
+    </label><br>
+    <button type="submit" [disabled]="!EnquiryForm.valid">Submit</button>
+</fieldset>
+</form>
