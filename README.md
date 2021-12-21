@@ -1,2 +1,2 @@
-# Enquiry_Form
-Enquiry form using angular
+# Enquiry_Form_using angular
+Enquiry form using angular-reactive form 
